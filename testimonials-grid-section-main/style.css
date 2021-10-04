@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@1&display=swap");
+
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  background-color: hsl(210, 46%, 95%);
+}
+@media (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "q q q q q q w w w s s s"
+      "e e e a a a a a a s s s";
+    gap: 2rem;
+    margin: 3rem;
+  }
+}
+.title {
+  opacity: 50%;
+}
+
+.review {
+  opacity: 70%;
+}
+
+img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  float: left;
+}
+
+.name {
+  margin-left: 4rem;
+}
+
+/* first testimonial */
+.comment1 {
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  padding: 3em;
+  border-radius: 2%;
+  grid-area: q;
+}
+
+/* 
+Second testimonial */
+.comment2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: w;
+  color: white;
+  padding: 3em;
+  border-radius: 2%;
+}
+
+/* Third testimonial */
+.comment3 {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: e;
+  color: hsl(219, 29%, 14%);
+  padding: 3em;
+  border-radius: 2%;
+}
+
+/* fourth testimonial */
+.comment4 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: a;
+  color: white;
+  padding: 3em;
+  border-radius: 2%;
+}
+
+/* fifth testimonial */
+.comment5 {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: s;
+  color: hsl(219, 29%, 14%);
+  padding: 3em;
+  border-radius: 2%;
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: grid;
+    grid-template-areas: "q" "w" "s" "e" "a";
+    row-gap: 2rem;
+  }
+}
